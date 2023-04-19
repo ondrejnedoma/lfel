@@ -1,0 +1,54 @@
+{
+  "name": "lfel",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve-vue": "vue-cli-service serve",
+    "serve-app": "node app/index.js",
+    "serve-all": "concurrently \"npm run serve-vue\" \"npm run serve-app\"",
+    "build-vue": "vue-cli-service build",
+    "build-app": "docker build . -t lfel",
+    "build-all": "npm run build-vue && npm run build-app",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "lowdb": "^1.0.0",
+    "node-fetch": "^2.6.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@babel/preset-env": "^7.21.4",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "concurrently": "^8.0.1",
+    "core-js": "^3.8.3",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "vue": "^3.2.13",
+    "vuetify": "^3.1.14"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}

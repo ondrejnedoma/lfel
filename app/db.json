@@ -1,0 +1,14 @@
+{
+  "preferences": {
+    "origin": [
+      "KLU"
+    ],
+    "destination": [
+      "ALC",
+      "PMI"
+    ],
+    "isDark": false,
+    "darkTheme": false,
+    "numberOfDays": "5"
+  }
+}
