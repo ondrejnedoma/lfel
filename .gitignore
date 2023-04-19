@@ -1,7 +1,7 @@
 .DS_Store
 node_modules
 app/node_modules
-app/public
+app/db.json
 
 
 # local env files
